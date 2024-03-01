@@ -18,15 +18,20 @@
     <body>
         <header id="top-nav-bar">
             <!-- add an unordered list to the header as a place holder for the three link -->
-            <!-- change to paragraph with links -->
-            <p class="header-link">Github</p>
-            <p class="header-link">Portfolio</p>
-            <p class="header-link">Contact</p>
+            <!-- change to paragraph with no links -->
+            <a href="" class="header-link">Github</a>
+            <a href="" class="header-link">Portfolio</a>
+            <a href="" class="header-link">Contact</a>
         </header>
+
+        <!-- add space as a placeholder so main content starts underneath nav bar -->
+        <div class="placeholder">
+            place holder
+        </div>
 
         <main>
             <div>
-                <h1>My New Website</h1>
+                <h1><strong>New Website</strong></h1>
             </div>
 
             <section>
@@ -34,19 +39,29 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             </section>
 
-            <section>
-                <!-- create a contact form -->
-                <h2>Contact Me</h2>
-                <!-- user inputs their name and email -->
-                <p>Name: <input></p>
-                <p>Email: <input></p>
-                <!-- provide a submission button -->
-                <p><button type="submit" >SEND</button></p>
-            </section>
+            
         </main>
-
+        
+        <section class="form">
+                <!-- create a contact form -->
+                <h2 class="form-color">Contact Me</h2>
+                <form class="form-box
+                ">
+                    <!-- user inputs their name and email -->
+                    <!-- change to a form section rather than div -->
+                    <label for="user-name">Name:</label>
+                    <input type="text" name="user-name"> <br> <br>
+                    <label for="user-email">Email:</label>
+                    <input type="text" name="user-email">
+                    </div>
+                    <!-- provide a submission button -->
+                    <p id="form-button"><button type="submit" >SEND</button></p>
+                </form>
+                
+        </section>
+        
         <footer>
             <!-- adding a footer -->
-            <p>&copy; 2024 My New Website Productions</p>
+            &copy; 2024 My New Website Productions
         </footer>
     </body>

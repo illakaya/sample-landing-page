@@ -2,6 +2,82 @@
     /* introduce a san serif font family */
     font-family: Arial, Helvetica, sans-serif;
     color: #504846;
+    background-color: #FDF8F5;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+main {
+    text-align: center;
+}
+
+form {
+    text-align: right;
+}
+
+label {
+    background-color: inherit;
+}
+
+input {
+    width: 250px;
+}
+
+button {
+    height: 40px;
+    width: 75px;
+    color: #E8CEBF;
+    background-color: #504846;
+    border: #504846 3px outset;
+}
+
+footer {
+    text-align: center;
+    background-color: #24614f;
+    color: #FDF8F5;
+    padding: 25px;
+    border-bottom: #504846 10px solid;
+}
+
+.header-link {
+    /* ensure links are displayed side-by-side with space */
+    display: inline;
+    padding-right: 20px;
+    color: #FDF8F5;
+    text-decoration-line: none;
+    /* inherit background colour from the header */
+    background-color: inherit;
+}
+
+.form {
+    background-color: #E8CEBF;
+    border-top: #deaf95 3px solid;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-box {
+    padding: 15px 45px;
+    background-color: inherit;
+    border: #deaf95 solid 5px;
+    border-radius: 20px;
+    width: 310px;
+    margin: auto;
+}
+
+.form-color {
+    background-color: inherit;
+}
+
+div.placeholder {
+    /* position content below the nav bar. note that the height is 66px because of the height of the nav bar + border width */
+    position: relative;
+    height: 66px;
+}
+
+#form-button {
+    background-color: inherit;
+    text-align: center;
 }
 
 #top-nav-bar {
@@ -21,24 +97,10 @@
     line-height: 56px;
 }
 
-main {
-    /* position content below the nav bar */
-    position: relative;
-    display: block;
-    top: 66px;
-}
-
-.header-link {
-    /* ensure links are displayed side-by-side with space */
-    display: inline;
-    padding-right: 20px;
-    color: white;
-    text-decoration-line: none;
-}
-
 /* colour palette
 #504846 brown
 #444446 dark grey
 #DEAF95 sand
 #E8CEBF cream
+#FDF8F5 beige
 #24614F dark green */
