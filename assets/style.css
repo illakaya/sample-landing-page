@@ -1,0 +1,44 @@
+* {
+    /* introduce a san serif font family */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #504846;
+}
+
+#top-nav-bar {
+    /* nav bar is to be fixed at the top of the page on scroll and takes the whole width of browser */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    /* keep nav bar as top overlay */
+    z-index: 1;
+    /* style nav bar */
+    background-color: #24614f;
+    border-bottom: #deaf95 10px solid;
+    text-align: right;
+    display: block;
+    height: 56px;
+    line-height: 56px;
+}
+
+main {
+    /* position content below the nav bar */
+    position: relative;
+    display: block;
+    top: 66px;
+}
+
+.header-link {
+    /* ensure links are displayed side-by-side with space */
+    display: inline;
+    padding-right: 20px;
+    color: white;
+    text-decoration-line: none;
+}
+
+/* colour palette
+#504846 brown
+#444446 dark grey
+#DEAF95 sand
+#E8CEBF cream
+#24614F dark green */
