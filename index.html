@@ -12,54 +12,59 @@
         <!-- link style sheet -->
         <link rel="stylesheet" href="./assets/style.css">
         <!-- shows in page tab -->
-        <title>Contact Form | My New Website</title>
+        <title>My New Website</title>
     </head>
     
+    <!-- clean code by removing unnecessary classes -->
+    
     <body>
-        <header id="top-nav-bar">
+        <header>
             <!-- add an unordered list to the header as a place holder for the three link -->
             <!-- change to paragraph with no links -->
-            <a href="" class="header-link">Github</a>
-            <a href="" class="header-link">Portfolio</a>
-            <a href="" class="header-link">Contact</a>
+            <!-- changed back to an unordered list of links leading nowhere -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">Github</a>
+                    </li>
+                    <li>
+                        <a href="">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            
         </header>
 
-        <!-- add space as a placeholder so main content starts underneath nav bar -->
+        <!-- add space as a placeholder so main content starts underneath nav bar, need to conduct research as to how to remove this as fixed position does not take page space, hence overlay -->
         <div class="placeholder">
             place holder
         </div>
 
+        <!-- create the main section -->
         <main>
-            <div>
-                <h1><strong>New Website</strong></h1>
-            </div>
-
-            <section>
-                <img src="./assets/image-1.png" alt="Box with text - coming soon">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </section>
-
-            
+            <h1>New Website</h1>
+            <img src="./assets/image-1.png" alt="Box with text - coming soon">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
         </main>
         
-        <section class="form">
-                <!-- create a contact form -->
-                <h2 class="form-color">Contact Me</h2>
-                <form class="form-box
-                ">
-                    <!-- user inputs their name and email -->
-                    <!-- change to a form section rather than div -->
-                    <label for="user-name">Name:</label>
-                    <input type="text" name="user-name"> <br> <br>
-                    <label for="user-email">Email:</label>
-                    <input type="text" name="user-email">
-                    </div>
-                    <!-- provide a submission button -->
-                    <p id="form-button"><button type="submit" >SEND</button></p>
-                </form>
-                
-        </section>
-        
+        <!-- be specific with your semantic elements, creating a form for user's to fill in information -->
+        <form>
+            <h2>Contact Me</h2>
+            <!-- dividing it so a box can go around where users enter their details -->
+            <div class="form-box">
+                <label for="user-name">Name:</label>
+                <input type="text" name="user-name"> <br> <br>
+                <label for="user-email">Email:</label>
+                <input type="text" name="user-email">
+                <p>
+                    <button type="submit" >SEND</button>
+                </p>
+            </div>
+        </form>
+
         <footer>
             <!-- adding a footer -->
             &copy; 2024 My New Website Productions
