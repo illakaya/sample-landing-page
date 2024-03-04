@@ -1,0 +1,114 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #504846;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+header {
+    /* fix nav bar to the top of page on scroll and takes the whole width of browser */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    /* style nav bar */
+    background-color: #24614f;
+    color: #E8CEBF;
+    border-bottom: #deaf95 10px solid;
+}
+
+header nav {
+    display: flex;
+    justify-content: end;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    list-style-type: none;
+}
+
+/* stacking elements to be more specific with styling, hence reducing the class or id attribute in the html file */
+
+/* header nav {
+    make the links float to the right and have space from the browser window
+    float: right;
+    margin-right: 15px;
+}
+
+header nav ul {
+    remove bullet points
+    list-style-type: none;
+}
+
+header nav ul li {
+    displays list next to each other and spaces them
+    display: inline-block;
+    margin-left: 25px;
+} */
+
+a {
+    color: #FDF8F5;
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+main {
+    margin-top: 60px;
+    text-align: center;
+    background-color: #FDF8F5;
+    padding: 18px 0px;
+}
+
+p {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    padding: 25px;
+    background-color: #E8CEBF;
+    border-top: #deaf95 5px solid;
+}
+
+.form-box {
+    padding: 15px 60px;
+    border: #deaf95 solid 5px;
+    border-radius: 20px;
+    width: max-content;
+    margin: auto;
+    text-align: right;
+}
+
+input {
+    width: 250px;
+}
+
+button {
+    height: 40px;
+    width: 75px;
+    color: #E8CEBF;
+    background-color: #504846;
+    border: #504846 3px outset;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: #24614f;
+    color: #FDF8F5;
+    padding: 25px;
+    border-bottom: #504846 10px solid;
+}
+
+/* colour palette
+#504846 brown
+#444446 dark grey
+#DEAF95 sand
+#E8CEBF cream
+#FDF8F5 beige
+#24614F dark green */
