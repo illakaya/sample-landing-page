@@ -1,67 +1,54 @@
-<!-- Declare document type so browser knows to expect HTML on the page -->
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Declare document type so browser knows to expect HTML on the page -->
 
-<!-- Intro the start of HTML document and tell browser the language of the webpage is English -->
-<html lang="en">
-    <!-- Head element contains metadata (accessibility, search engines and performance) -->
-    <head>
-        <!-- Choose character encoding system -->
-        <meta charset="UTF-8"/>
-        <!-- controls the page's dimensions and scaling (zoom) -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- link style sheet -->
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <!-- shows in page tab -->
-        <title>My New Website</title>
-    </head>
-    
-    <!-- clean code by removing unnecessary classes -->
-    
-    <body>
-        <header>
-            <!-- add an unordered list to the header as a place holder for the three link -->
-            <!-- change to paragraph with no links -->
-            <!-- changed back to an unordered list of links leading nowhere -->
-            <nav>
-                <ul>
-                    <li>
-                        <a href="">Github</a>
-                    </li>
-                    <li>
-                        <a href="">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            
-        </header>
+<html lang="en"> <!-- Intro the start of HTML document and tell browser the language of the webpage is English -->
 
-        <!-- create the main section -->
-        <main>
-            <h1>New Website</h1>
-            <img src="./assets/images/image-1.png" alt="Box with text - coming soon">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-        </main>
-        
-        <!-- be specific with your semantic elements, creating a form for user's to fill in information -->
-        <form>
-            <h2>Contact Me</h2>
-            <!-- dividing it so a box can go around where users enter their details -->
-            <div class="form-box">
-                <label for="user-name">Name:</label>
-                <input type="text" name="user-name"> <br> <br>
-                <label for="user-email">Email:</label>
-                <input type="text" name="user-email">
-                <p>
-                    <button type="submit" >SEND</button>
-                </p>
-            </div>
-        </form>
+<head> <!-- Head element contains metadata (accessibility, search engines and performance) -->
+    <meta charset="UTF-8" /> <!-- Choose character encoding system -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- controls the page's dimensions and scaling (zoom) -->
+    <link rel="stylesheet" href="./assets/css/style.css"> <!-- link style sheet -->
+    <title>My New Website</title> <!-- shows in page tab -->
+</head>
 
-        <footer>
-            <!-- adding a footer -->
-            &copy; 2024 My New Website Productions
-        </footer>
-    </body>
+<!-- clean code by removing unnecessary classes -->
+
+<body>
+    <header>
+        <nav>
+            <ul> <!-- add an unordered list to the header for the three link -->
+                <li>
+                    <a href="https://github.com/illakaya">Github</a>
+                </li>
+                <li>
+                    <a href="https://illakaya.github.io/Mimi-Nguyen-Portfolio/">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a> <!-- Navigate to the contact Me section -->>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> <!-- create the main section -->
+        <h1>New Website</h1>
+        <img src="./assets/images/image-1.png" alt="Box with text - coming soon">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    </main>
+
+    <form> <!-- be specific with your semantic elements, creating a form for user's to fill in information -->
+        <h2 id="contact">Contact Me</h2> <!-- dividing it so a box can go around where users enter their details -->
+        <div class="form-box">
+            <label for="user-name">Name:</label>
+            <input type="text" name="user-name"> <br>
+            <label for="user-email">Email:</label>
+            <input type="text" name="user-email">
+            <p>
+                <button type="submit">SEND</button>
+            </p>
+        </div>
+    </form>
+
+    <footer> <!-- adding a footer -->
+        &copy; 2024 My New Website Productions
+    </footer>
+</body>
