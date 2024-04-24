@@ -2,53 +2,56 @@
 
 <html lang="en"> <!-- Intro the start of HTML document and tell browser the language of the webpage is English -->
 
-<head> <!-- Head element contains metadata (accessibility, search engines and performance) -->
+  <head> <!-- Head element contains metadata (accessibility, search engines and performance) -->
     <meta charset="UTF-8" /> <!-- Choose character encoding system -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- controls the page's dimensions and scaling (zoom) -->
-    <link rel="stylesheet" href="./assets/css/style.css"> <!-- link style sheet -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- controls the page's dimensions and scaling (zoom) -->
+    <link rel="stylesheet" href="./assets/css/style.css" /> <!-- link style sheet -->
     <title>My New Website</title> <!-- shows in page tab -->
-</head>
+  </head>
 
-<!-- clean code by removing unnecessary classes -->
-
-<body>
+  <body>
     <header>
-        <nav>
-            <ul> <!-- add an unordered list to the header for the three link -->
-                <li>
-                    <a href="https://github.com/illakaya">Github</a>
-                </li>
-                <li>
-                    <a href="https://illakaya.github.io/Mimi-Nguyen-Portfolio/">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a> <!-- Navigate to the contact Me section -->>
-                </li>
-            </ul>
-        </nav>
+      <nav>
+        <ul> <!-- add an unordered list to the header for the three link -->
+          <li>
+            <a href="https://github.com/illakaya">Github</a>
+          </li>
+          <li>
+            <a href="https://illakaya.github.io/Mimi-Nguyen-Portfolio/"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="#contact">Contact</a> <!-- Navigate to the contact Me section -->>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main> <!-- create the main section -->
-        <h1>New Website</h1>
-        <img src="./assets/images/image-1.png" alt="Box with text - coming soon">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      <h1>New Website</h1>
+      <img
+        src="./assets/images/image-1.png"
+        alt="Box with text - coming soon"
+      />
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
     </main>
 
     <form> <!-- be specific with your semantic elements, creating a form for user's to fill in information -->
-        <h2 id="contact">Contact Me</h2> <!-- dividing it so a box can go around where users enter their details -->
-        <div class="form-box">
-            <label for="user-name">Name:</label>
-            <input type="text" name="user-name"> <br>
-            <label for="user-email">Email:</label>
-            <input type="text" name="user-email">
-            <p>
-                <button type="submit">SEND</button>
-            </p>
-        </div>
+      <h2 id="contact">Contact Me</h2> <!-- dividing it so a box can go around where users enter their details -->
+      <div class="form-box">
+        <label for="user-name">Name:</label>
+        <input type="text" name="user-name" /> <br>
+        <label for="user-email">Email:</label>
+        <input type="text" name="user-email" />
+        <p>
+          <button type="submit">SEND</button>
+        </p>
+      </div>
     </form>
 
     <footer> <!-- adding a footer -->
-        &copy; 2024 My New Website Productions
+      &copy; 2024 My New Website Productions
     </footer>
-</body>
+  </body>
+</html>

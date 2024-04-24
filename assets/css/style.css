@@ -1,129 +1,102 @@
 /* Add pseudo class root to hold variables that are reused frequently */
 :root {
-    --light: #E8CEBF;
-    --acc-green: #24614F;
-    --acc-brown: #DEAF95;
+  --light: #e8cebf;
+  --acc-green: #24614f;
+  --acc-sand: #deaf95;
+  --acc-brown: #504846;
+  --acc-beige: #fdf8f5;
 }
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #504846;
-    margin-left: 0px;
-    margin-right: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--acc-brown);
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
-header {
-    /* fix nav bar to the top of page on scroll and takes the whole width of browser */
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    /* style nav bar */
-    background-color: var(--acc-green);
-    color: var(--light);
-    border-bottom: var(--acc-brown) 10px solid;
+header { /* fix nav bar to the top of page on scroll and takes the whole width of browser and style it */
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: var(--acc-green);
+  color: var(--light);
+  border-bottom: var(--acc-sand) 10px solid;
 }
 
-/* stacking elements to be more specific with styling, hence reducing the class or id attribute in the html file */
-/* header nav {
-    make the links float to the right and have space from the browser window
-    float: right;
-    margin-right: 15px;
+header nav { /* Learnt about flexboxes, make the container a flexbox and have the items at the end of the axis */
+  display: flex;
+  justify-content: flex-end;
 }
 
 header nav ul {
-    remove bullet points
-    list-style-type: none;
-}
-
-header nav ul li {
-    displays list next to each other and spaces them
-    display: inline-block;
-    margin-left: 25px;
-} */
-
-/* Learnt about flexboxes, make the container a flexbox and have the items at the end of the axis */
-header nav {
-    display: flex;
-    justify-content: flex-end;
-}
-
-header nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    width: 300px;
-    list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  list-style-type: none;
 }
 
 a {
-    color: #FDF8F5;
-    text-decoration: none;
+  color: var(--acc-beige);
+  text-decoration: none;
 }
 
 h1 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 60px;
-    text-align: center;
-    background-color: #FDF8F5;
-    padding: 18px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  text-align: center;
+  background-color: var(--acc-beige);
+  padding: 18px 0px;
 }
 
 form {
-    text-align: center;
-    padding: 25px;
-    background-color: #E8CEBF;
-    border-top: #deaf95 5px solid;
+  text-align: center;
+  padding: 25px;
+  background-color: var(--light);
+  border-top: var(--acc-sand) 5px solid;
 }
 
 .form-box {
-    padding: 15px 60px;
-    border: #deaf95 solid 5px;
-    border-radius: 20px;
-    width: max-content;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+  padding: 15px 60px;
+  border: var(--acc-sand) solid 5px;
+  border-radius: 20px;
+  width: max-content;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 input {
-    width: 250px;
-    height: 20px;
-    border-radius: 5px;
-    border: 1px solid;
-    padding: 5px;
+  width: 250px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid;
+  padding: 5px;
 }
 
 button {
-    height: 40px;
-    width: 75px;
-    color: #FDF8F5;
-    background-color: #504846;
-    border: #504846 3px outset;
+  height: 40px;
+  width: 75px;
+  color: var(--acc-beige);
+  background-color: var(--acc-brown);
+  border: var(--acc-brown) 3px outset;
 }
 
 button:hover {
-    background-color: #24614f;
-    border: #24614f 3px outset;
+  background-color: var(--acc-green);
+  border: var(--acc-green) 3px outset;
 }
 
 footer {
-    text-align: center;
-    background-color: #24614f;
-    color: #FDF8F5;
-    padding: 25px;
-    border-bottom: #504846 10px solid;
+  text-align: center;
+  background-color: var(--acc-green);
+  color: var(--acc-beige);
+  padding: 25px;
+  border-bottom: var(--acc-brown) 10px solid;
 }
-
-/* colour palette
-#504846 brown
-#444446 dark grey
-#DEAF95 sand
-#E8CEBF cream
-#FDF8F5 beige
-#24614F dark green */
